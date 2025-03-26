@@ -130,7 +130,7 @@ auto: &auto {type: url-test, include-all: true, tolerance: 70, interval: 300, la
 slct: &slct {type: select, include-all: true}
 pr: &pr {type: select, proxies: [♻️🇭🇰 香港自动, ♻️🇯🇵🇸🇬 日台新韩-自动, ♻️🇺🇲 美国自动, ♻️ 自动选择, 🇨🇳 台湾节点, 🇯🇵 日本节点, 🇸🇬 新加坡节点, 🇺🇸 美国节点, 🌐 全部节点, 🌐 IPV6, REJECT]}
 proxy-groups:
-  - {name: 🚀 默认代理, type: select, proxies: [♻️🇭🇰 香港自动, ♻️🇯🇵🇸🇬 日台新韩-自动, ♻️🇺🇲 美国自动, 🌐 全部节点]}
+  - {name: 🚀 默认代理, type: select, proxies: [♻️🇭🇰 香港自动, ♻️🇯🇵🇸🇬 日台新韩-自动, ♻️🇺🇲 美国自动,🌐 IPV6, 🌐 全部节点]}
   - {name: 🍎 Apple, type: select, proxies: [直连, 🚀 默认代理]}
   - {name: 🪟 Microsoft, type: select, proxies: [直连, 🚀 默认代理]}
   - {name: 👨🏿‍💻 GitHub, <<: *pr}
