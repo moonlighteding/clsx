@@ -1,4 +1,10 @@
 # 注意规则在满足自己需求情况下，尽量做到精简，不要过度复杂，以免影响性能。
+# 瞄点
+# DNS
+defdns: &defdns ['tps://223.5.5.5/dns-query']
+namedns: &namedns ['223.5.5.5']
+
+filter: &filter "官网|剩余|流量|套餐|订闽|到期|异常|失败|Expire Date|Traffic|ExpireDat|0.5|0.4|0.3|0.2|0.1"
 # 机场订阅
 proxy-providers:
   Airport1:
@@ -15,6 +21,7 @@ proxy-providers:
         - "Clash"
         - "mihomo"
         - "Clash.meta"
+  exclude-filter: *filter
   override:
     udp: true
     down: "50 Mbps"
@@ -111,14 +118,11 @@ dns:
     - "+.ntp1.aliyun.com"
     - "+.ntp.ntsc.ac.cn"
     - "+.cn.ntp.org.cn"
-  default-nameserver:
-    - 223.5.5.5
+  default-nameserver: *defdns
   proxy-server-nameserver:
     - https://dns.alidns.com/dns-query
   # namesever尽量用运营商提供的DNS
-  nameserver:
-    - 223.5.5.5
-    - 119.29.29.29
+  nameserver: *namedns
  
 # 出站策略
 # 注意锚点必须放在引用的上方，可以集中把锚点全部放yaml的顶部。
