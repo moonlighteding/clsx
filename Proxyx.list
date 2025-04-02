@@ -1,10 +1,10 @@
 
 # 其他网站
 DOMAIN-SUFFIX,freezhihu.org
-DOMAIN-SUFFIX,hongxingdl.love
+# DOMAIN-SUFFIX,hongxingdl.love
 DOMAIN-SUFFIX,hongxingdl.com
-DOMAIN-SUFFIX,hongxingdl.vip
-DOMAIN-SUFFIX,ipv6.hongxingdl.vip
+# DOMAIN-SUFFIX,hongxingdl.vip
+# DOMAIN-SUFFIX,ipv6.hongxingdl.vip
 DOMAIN-SUFFIX,qichiyu.com
 DOMAIN-SUFFIX,raw.githubusercontent.com
 
