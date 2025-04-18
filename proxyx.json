@@ -1,0 +1,16 @@
+{
+  "version": 1,
+  "rules": [
+    {
+      "domain": [
+        "instant.arubanetworks.com",
+       
+      ],
+      "domain_suffix": [
+        "lan",
+        
+      ],
+      "domain_regex": "^[a-z]([a-z0-9-]{0,61}[a-z0-9])?$"
+    }
+  ]
+}
